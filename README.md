@@ -6,7 +6,7 @@ Built using Hadoop Pipe API with C++ workers.
 ## Basic Idea
 Source: [Jimmy Lin and Chris Dyer. *Data-Intensive Text Processing with
 MapReduce*. Morgan & Claypool Publishers, 2010](
-  lintool.github.io/MapReduceAlgorithms)
+  https://lintool.github.io/MapReduceAlgorithms)
 
 We would like to calculating rank for Twitter user using follower popularity.
 Each user give contribution by his rank to following user.

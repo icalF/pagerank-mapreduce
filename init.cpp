@@ -19,18 +19,9 @@ public:
 
     vector< string > params =
       HadoopUtils::splitString( line, "\t " );
-    
+
     context.emit( params[1], params[0] );
     context.emit( params[0], "-");
-  }
-};
-
-class InitCombiner : public HadoopPipes::Reducer {
-public:
-  InitCombiner( HadoopPipes::TaskContext& context ) {}
-
-  void reduce( HadoopPipes::ReduceContext& context ) {
-    
   }
 };
 
@@ -55,9 +46,9 @@ public:
     }
   }
 };
- 
+
 int main(int argc, char *argv[]) {
   return HadoopPipes::runTask(HadoopPipes::TemplateFactory<
-                              InitMapper, 
+                              InitMapper,
                               InitReducer>() );
 }

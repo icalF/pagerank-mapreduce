@@ -1,1 +1,1 @@
-export PATH=$PATH:~/Application/hadoop-2.7.1/bin
+export PATH=$PATH:$HADOOP_INSTALL/bin
